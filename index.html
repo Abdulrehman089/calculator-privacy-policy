@@ -1,330 +1,920 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Calculator Privacy Policy</title>
+<title>Calculator - Privacy Policy</title>
 
 <style>
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #202124;
-    background: #fff;
-    line-height: 1.65;
-}
-
-.header {
-    height: 72px;
-    border-bottom: 1px solid #dadce0;
-    display: flex;
-    align-items: center;
-    padding: 0 7%;
-    font-size: 22px;
-    color: #202124;
-}
-
-.header span {
-    font-weight: 500;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 55px 25px 80px;
-}
-
-h1 {
-    font-size: 42px;
-    font-weight: 400;
-    margin: 0 0 12px;
-    letter-spacing: -0.5px;
-}
-
-.updated {
-    color: #5f6368;
-    font-size: 14px;
-    margin-bottom: 48px;
-}
-
-.intro {
-    font-size: 18px;
-    color: #3c4043;
-    margin-bottom: 45px;
-}
-
-h2 {
-    font-size: 27px;
-    font-weight: 400;
-    margin-top: 52px;
-    margin-bottom: 18px;
-}
-
-h3 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 30px;
-}
-
-p {
-    font-size: 16px;
-    margin: 14px 0;
-}
-
-ul {
-    margin-top: 12px;
-    padding-left: 28px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-.info-box {
-    background: #f8f9fa;
-    border-radius: 12px;
-    padding: 24px;
-    margin: 28px 0;
-}
-
-.info-box strong {
-    font-size: 17px;
-}
-
-a {
-    color: #1a73e8;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.footer {
-    border-top: 1px solid #dadce0;
-    padding: 30px 7%;
-    color: #5f6368;
-    font-size: 14px;
-}
-
-@media (max-width: 600px) {
-
-    .header {
-        padding: 0 20px;
-        height: 64px;
+    :root {
+        --blue: #1a73e8;
+        --blue-dark: #1557b0;
+        --text: #202124;
+        --secondary: #5f6368;
+        --border: #dadce0;
+        --light: #f8f9fa;
+        --lighter: #f1f3f4;
+        --white: #ffffff;
     }
 
-    .container {
-        padding: 38px 20px 60px;
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family:
+            Arial,
+            Helvetica,
+            sans-serif;
+        color: var(--text);
+        background: var(--white);
+        line-height: 1.7;
+    }
+
+    /* HEADER */
+
+    header {
+        height: 72px;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        padding: 0 6%;
+        position: sticky;
+        top: 0;
+        background: rgba(255,255,255,0.97);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    .brand-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        background: var(--blue);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .brand-text span {
+        color: var(--secondary);
+        font-weight: 400;
+    }
+
+    /* HERO */
+
+    .hero {
+        background: linear-gradient(
+            180deg,
+            #f8faff 0%,
+            #ffffff 100%
+        );
+        border-bottom: 1px solid #edf0f2;
+    }
+
+    .hero-inner {
+        max-width: 1180px;
+        margin: auto;
+        padding: 90px 30px 85px;
+    }
+
+    .eyebrow {
+        color: var(--blue);
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
     }
 
     h1 {
-        font-size: 34px;
+        font-size: 52px;
+        line-height: 1.15;
+        font-weight: 400;
+        margin: 0 0 18px;
+        letter-spacing: -1px;
+    }
+
+    .effective {
+        color: var(--secondary);
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
+
+    .hero-description {
+        max-width: 760px;
+        font-size: 20px;
+        color: #3c4043;
+        line-height: 1.65;
+        margin: 0;
+    }
+
+    /* MAIN */
+
+    .layout {
+        max-width: 1180px;
+        margin: auto;
+        padding: 65px 30px 100px;
+        display: grid;
+        grid-template-columns: 245px 1fr;
+        gap: 70px;
+    }
+
+    /* SIDEBAR */
+
+    .sidebar {
+        position: sticky;
+        top: 105px;
+        align-self: start;
+    }
+
+    .sidebar-title {
+        font-size: 13px;
+        font-weight: bold;
+        color: var(--secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        margin-bottom: 15px;
+    }
+
+    .sidebar a {
+        display: block;
+        padding: 8px 0;
+        color: #5f6368;
+        text-decoration: none;
+        font-size: 14px;
+        border-left: 2px solid transparent;
+        padding-left: 14px;
+    }
+
+    .sidebar a:hover {
+        color: var(--blue);
+        border-left-color: var(--blue);
+    }
+
+    /* CONTENT */
+
+    .content {
+        max-width: 760px;
+    }
+
+    .notice {
+        background: #f8f9fa;
+        border: 1px solid #e5e7ea;
+        border-radius: 14px;
+        padding: 25px 28px;
+        margin-bottom: 55px;
+    }
+
+    .notice-title {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+
+    .notice p {
+        margin: 0;
+        color: var(--secondary);
+    }
+
+    section {
+        margin-bottom: 65px;
+        scroll-margin-top: 100px;
     }
 
     h2 {
-        font-size: 24px;
-        margin-top: 42px;
+        font-size: 30px;
+        line-height: 1.3;
+        font-weight: 400;
+        margin: 0 0 20px;
+        letter-spacing: -0.3px;
     }
 
-    .intro {
+    h3 {
+        font-size: 19px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #3c4043;
+        margin: 0 0 18px;
+    }
+
+    ul {
+        padding-left: 25px;
+        color: #3c4043;
+    }
+
+    li {
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+
+    a {
+        color: var(--blue);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* CARDS */
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin: 25px 0;
+    }
+
+    .card {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 25px;
+        background: white;
+        transition: 0.2s ease;
+    }
+
+    .card:hover {
+        box-shadow: 0 5px 20px rgba(60,64,67,0.10);
+        transform: translateY(-2px);
+    }
+
+    .card-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        background: #e8f0fe;
+        color: var(--blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        margin: 0 0 8px;
         font-size: 17px;
     }
-}
+
+    .card p {
+        font-size: 14px;
+        margin: 0;
+        color: var(--secondary);
+    }
+
+    /* BLUE BOX */
+
+    .blue-box {
+        background: #e8f0fe;
+        border-radius: 15px;
+        padding: 28px;
+        margin: 25px 0;
+    }
+
+    .blue-box h3 {
+        color: #174ea6;
+        margin-top: 0;
+    }
+
+    .blue-box p {
+        color: #3c4043;
+        margin-bottom: 0;
+    }
+
+    /* LIST */
+
+    .check-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .check-list li {
+        position: relative;
+        padding-left: 32px;
+        margin-bottom: 14px;
+    }
+
+    .check-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--blue);
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    /* CONTACT */
+
+    .contact-box {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 32px;
+        background: #fff;
+    }
+
+    .contact-box h3 {
+        margin-top: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+        border-top: 1px solid var(--border);
+        background: #f8f9fa;
+    }
+
+    .footer-inner {
+        max-width: 1180px;
+        margin: auto;
+        padding: 35px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-brand {
+        font-weight: 500;
+    }
+
+    .footer-copy {
+        color: var(--secondary);
+        font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+        header {
+            padding: 0 20px;
+        }
+
+        .hero-inner {
+            padding: 65px 22px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .hero-description {
+            font-size: 18px;
+        }
+
+        .layout {
+            display: block;
+            padding: 45px 22px 70px;
+        }
+
+        .sidebar {
+            position: static;
+            margin-bottom: 45px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar a {
+            display: inline-block;
+            margin-right: 18px;
+            padding-left: 0;
+            border-left: none;
+        }
+
+        .sidebar a:hover {
+            border-left: none;
+        }
+
+        .cards {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-inner {
+            padding: 28px 22px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        .brand {
+            font-size: 18px;
+        }
+
+        .brand-icon {
+            width: 34px;
+            height: 34px;
+        }
+
+        h1 {
+            font-size: 34px;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+
+        .hero-inner {
+            padding: 50px 20px;
+        }
+
+        .layout {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <span>Calculator</span>
-</div>
+<!-- HEADER -->
 
-<div class="container">
-
-<h1>Privacy Policy</h1>
-
-<div class="updated">
-Effective 20 August 2026
-</div>
-
-<p class="intro">
-When you use Calculator, you can trust that your privacy is important to us.
-This Privacy Policy explains what information the Calculator application
-handles, why it is used, and how you can manage your information.
-</p>
+<header>
+    <div class="brand">
+        <div class="brand-icon">+</div>
+        <div class="brand-text">
+            Calculator <span>Privacy</span>
+        </div>
+    </div>
+</header>
 
 
-<h2>Information that Calculator collects</h2>
+<!-- HERO -->
 
-<p>
-Calculator is designed to provide calculation features without requiring
-users to create an account or submit personal information.
-</p>
+<div class="hero">
+    <div class="hero-inner">
 
-<p>
-We do not intentionally collect personal information such as your name,
-email address, phone number, contacts, precise location, photographs,
-or other information that directly identifies you.
-</p>
+        <div class="eyebrow">
+            Privacy & Security
+        </div>
 
+        <h1>
+            Privacy Policy
+        </h1>
 
-<h2>Information stored on your device</h2>
+        <div class="effective">
+            Effective 20 August 2026
+        </div>
 
-<p>
-Some Calculator features require information to be stored locally on your
-device. This information is used only to provide the application's features.
-</p>
+        <p class="hero-description">
+            When you use Calculator, you can trust that your privacy is
+            important to us. This Privacy Policy explains what information
+            the application handles, how it is used, and the choices
+            available to you.
+        </p>
 
-<h3>Calculation history</h3>
-
-<p>
-Your calculation history is stored locally on your device. It allows you
-to view previous calculations and reuse them when needed.
-</p>
-
-<div class="info-box">
-<strong>Your calculation history is not sent to our servers.</strong>
-
-<p>
-We do not receive, access, or store your calculation history remotely.
-</p>
+    </div>
 </div>
 
 
-<h3>Application preferences</h3>
+<!-- MAIN -->
 
-<p>
-Calculator may store preferences such as your selected light or dark
-appearance mode and sound-effect setting. These preferences remain on
-your device and are used to provide the application's functionality.
-</p>
+<div class="layout">
 
+    <!-- SIDEBAR -->
 
-<h2>Your apps, browser and device</h2>
+    <aside class="sidebar">
 
-<p>
-Calculator does not intentionally collect device information for the
-purpose of identifying you.
-</p>
+        <div class="sidebar-title">
+            On this page
+        </div>
 
-<p>
-The application does not require access to your contacts, precise
-location, camera, microphone, photos, or personal files for its core
-calculation features.
-</p>
+        <a href="#information">
+            Information we collect
+        </a>
 
+        <a href="#stored">
+            Information stored
+        </a>
 
-<h2>How Calculator uses information</h2>
+        <a href="#usage">
+            How information is used
+        </a>
 
-<p>
-Information stored locally by Calculator is used only to provide the
-features you choose to use, including:
-</p>
+        <a href="#internet">
+            Internet & services
+        </a>
 
-<ul>
-    <li>Performing calculations</li>
-    <li>Displaying calculation history</li>
-    <li>Remembering appearance preferences</li>
-    <li>Remembering sound-effect preferences</li>
-</ul>
+        <a href="#advertising">
+            Advertising
+        </a>
 
+        <a href="#children">
+            Children's privacy
+        </a>
 
-<h2>Internet and online services</h2>
+        <a href="#security">
+            Security
+        </a>
 
-<p>
-The core features of Calculator are designed to work without requiring
-an internet connection. Your calculations and locally stored preferences
-are not transmitted to our servers.
-</p>
+        <a href="#deletion">
+            Data deletion
+        </a>
 
+        <a href="#changes">
+            Policy changes
+        </a>
 
-<h2>Third-party services</h2>
+        <a href="#contact">
+            Contact us
+        </a>
 
-<p>
-Calculator does not currently use third-party services that collect
-personal information from users.
-</p>
-
-
-<h2>Advertising</h2>
-
-<p>
-Calculator does not currently display advertisements and does not use
-advertising services to collect information about users.
-</p>
+    </aside>
 
 
-<h2>Children's privacy</h2>
+    <!-- CONTENT -->
 
-<p>
-Calculator does not knowingly collect personal information from children.
-The application does not require users to provide personal information
-to use its core features.
-</p>
+    <main class="content">
 
+        <div class="notice">
 
-<h2>Security</h2>
+            <div class="notice-title">
+                Your privacy matters
+            </div>
 
-<p>
-Because Calculator does not collect or transmit personal information to
-our servers, we do not maintain a database of your personal information.
-Information stored locally by the application is protected by the security
-features of your device.
-</p>
+            <p>
+                Calculator is designed with privacy in mind. The application
+                does not require an account and its core calculation features
+                do not require you to provide personal information.
+            </p>
 
-
-<h2>Deleting information</h2>
-
-<p>
-You can remove locally stored calculation history using the application's
-available controls. You can also remove locally stored application data
-through your device settings or by uninstalling the application.
-</p>
+        </div>
 
 
-<h2>Changes to this Privacy Policy</h2>
+        <!-- INFORMATION -->
 
-<p>
-We may update this Privacy Policy from time to time to reflect changes
-to the application, its features, or applicable requirements.
-</p>
+        <section id="information">
 
-<p>
-When we make changes, the updated effective date will be displayed at
-the beginning of this Privacy Policy.
-</p>
+            <h2>
+                Information we collect
+            </h2>
+
+            <p>
+                Calculator does not intentionally collect personal information
+                from users. You can use the core features of the application
+                without creating an account or providing personal information.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="card-icon">
+                        A
+                    </div>
+
+                    <h3>
+                        No account required
+                    </h3>
+
+                    <p>
+                        Calculator does not require you to create an account
+                        to use its core features.
+                    </p>
+
+                </div>
 
 
-<h2>Contact us</h2>
+                <div class="card">
 
-<p>
-If you have questions or concerns about this Privacy Policy or Calculator,
-please contact us through the contact information provided on the
-Calculator application’s Google Play Store listing.
-</p>
+                    <div class="card-icon">
+                        ✓
+                    </div>
+
+                    <h3>
+                        No personal information
+                    </h3>
+
+                    <p>
+                        We do not intentionally collect names, email addresses,
+                        phone numbers, or similar personal information.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-<h2>About Calculator</h2>
+        <!-- STORED -->
 
-<p>
-Calculator is a simple and user-friendly calculator application that
-provides basic calculations, calculation history, light and dark modes,
-and optional sound effects.
-</p>
+        <section id="stored">
+
+            <h2>
+                Information stored on your device
+            </h2>
+
+            <p>
+                Calculator may store certain information locally on your
+                device to provide application features and remember your
+                preferences.
+            </p>
+
+            <h3>
+                Calculation history
+            </h3>
+
+            <p>
+                Your calculation history may be stored locally on your
+                device so that you can review previous calculations and
+                reuse them when needed.
+            </p>
+
+            <div class="blue-box">
+
+                <h3>
+                    Your calculations stay on your device
+                </h3>
+
+                <p>
+                    Calculation history is not intentionally transmitted to
+                    our servers or stored in a remote database.
+                </p>
+
+            </div>
+
+
+            <h3>
+                Application preferences
+            </h3>
+
+            <p>
+                Calculator may remember settings such as your selected
+                appearance mode and sound-effect preference. These settings
+                are stored locally and are used only to provide the
+                application's functionality.
+            </p>
+
+        </section>
+
+
+        <!-- USAGE -->
+
+        <section id="usage">
+
+            <h2>
+                How information is used
+            </h2>
+
+            <p>
+                Any information stored locally by Calculator is used to
+                provide and improve the features of the application.
+            </p>
+
+            <ul class="check-list">
+
+                <li>
+                    Perform mathematical calculations
+                </li>
+
+                <li>
+                    Display calculation history
+                </li>
+
+                <li>
+                    Remember light or dark appearance preferences
+                </li>
+
+                <li>
+                    Remember sound-effect preferences
+                </li>
+
+                <li>
+                    Provide a consistent application experience
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- INTERNET -->
+
+        <section id="internet">
+
+            <h2>
+                Internet and third-party services
+            </h2>
+
+            <p>
+                The core functionality of Calculator is designed to work
+                without requiring an internet connection.
+            </p>
+
+            <p>
+                Calculator does not currently require users to connect an
+                account or submit personal information to use the calculator,
+                history, appearance, or sound-effect features.
+            </p>
+
+            <p>
+                If third-party services are added to the application in the
+                future, this Privacy Policy may be updated to explain the
+                information those services process.
+            </p>
+
+        </section>
+
+
+        <!-- ADVERTISING -->
+
+        <section id="advertising">
+
+            <h2>
+                Advertising
+            </h2>
+
+            <p>
+                Calculator does not currently display advertisements and
+                does not intentionally use advertising services to collect
+                information about users.
+            </p>
+
+        </section>
+
+
+        <!-- CHILDREN -->
+
+        <section id="children">
+
+            <h2>
+                Children's privacy
+            </h2>
+
+            <p>
+                Calculator does not knowingly collect personal information
+                from children.
+            </p>
+
+            <p>
+                The application does not require users to provide personal
+                information to use its core features.
+            </p>
+
+        </section>
+
+
+        <!-- SECURITY -->
+
+        <section id="security">
+
+            <h2>
+                Security
+            </h2>
+
+            <p>
+                We take reasonable measures to protect the information
+                handled by the application.
+            </p>
+
+            <p>
+                Because Calculator does not maintain a remote database of
+                users' calculation history or personal information, the
+                majority of application data remains under the control of
+                the user's device.
+            </p>
+
+        </section>
+
+
+        <!-- DELETION -->
+
+        <section id="deletion">
+
+            <h2>
+                Deleting your information
+            </h2>
+
+            <p>
+                You can delete locally stored calculation history using
+                the available controls within the application.
+            </p>
+
+            <p>
+                You can also remove application data through your Android
+                device settings or by uninstalling Calculator.
+            </p>
+
+        </section>
+
+
+        <!-- CHANGES -->
+
+        <section id="changes">
+
+            <h2>
+                Changes to this Privacy Policy
+            </h2>
+
+            <p>
+                We may update this Privacy Policy from time to time to
+                reflect changes to Calculator, its features, or applicable
+                privacy requirements.
+            </p>
+
+            <p>
+                When changes are made, the effective date displayed at the
+                beginning of this Privacy Policy will be updated.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <h2>
+                Contact us
+            </h2>
+
+            <div class="contact-box">
+
+                <h3>
+                    Questions about privacy?
+                </h3>
+
+                <p>
+                    If you have questions or concerns about this Privacy
+                    Policy or the Calculator application, you can contact
+                    the developer through the contact information available
+                    on the application's Google Play Store listing.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section>
+
+            <h2>
+                About Calculator
+            </h2>
+
+            <p>
+                Calculator is a simple and user-friendly Android application
+                designed to make everyday calculations quick and convenient.
+            </p>
+
+            <p>
+                The application includes basic calculations, calculation
+                history, light and dark appearance modes, and optional
+                sound effects.
+            </p>
+
+        </section>
+
+    </main>
 
 </div>
 
-<div class="footer">
-© 2026 Calculator. All rights reserved.
-</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+            Calculator
+        </div>
+
+        <div class="footer-copy">
+            © 2026 Calculator. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
 
 </body>
 </html>
-```
