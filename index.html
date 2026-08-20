@@ -1,94 +1,267 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Calculator</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: #222;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #202124;
+            background: #ffffff;
+            line-height: 1.7;
         }
-        h1, h2 {
-            color: #111;
+
+        .header {
+            border-bottom: 1px solid #dadce0;
+            padding: 22px 7%;
+            font-size: 22px;
+            font-weight: 500;
         }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 55px 25px 80px;
+        }
+
         h1 {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
+            font-size: 42px;
+            font-weight: 400;
+            margin-bottom: 12px;
+            color: #202124;
+        }
+
+        h2 {
+            font-size: 27px;
+            font-weight: 400;
+            margin-top: 45px;
+            margin-bottom: 15px;
+            color: #202124;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 12px 0;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .date {
+            color: #5f6368;
+            margin-bottom: 40px;
+        }
+
+        .intro {
+            font-size: 19px;
+            color: #3c4043;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        footer {
+            border-top: 1px solid #dadce0;
+            padding: 30px 7%;
+            color: #5f6368;
+            font-size: 14px;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 35px 20px 60px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .intro {
+                font-size: 17px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<h1>Privacy Policy for Calculator</h1>
+<div class="header">
+    Calculator
+</div>
 
-<p><strong>Effective Date:</strong> August 20, 2026</p>
+<div class="container">
 
-<p>
-This Privacy Policy explains how Calculator ("the App") handles information
-when you use the application.
-</p>
+    <h1>Privacy Policy</h1>
 
-<h2>Information We Collect</h2>
+    <p class="date">
+        Effective date: 20 August 2026
+    </p>
 
-<p>
-Calculator does not collect, store, or transmit personal information.
-The App does not require users to create an account or provide personal
-information to use its features.
-</p>
+    <p class="intro">
+        Your privacy is important to us. This Privacy Policy explains how
+        Calculator handles information when you use our application.
+        We designed Calculator to provide a simple and private calculation
+        experience.
+    </p>
 
-<h2>Calculation History</h2>
+    <h2>Information We Collect</h2>
 
-<p>
-Calculation history is stored locally on your device. This information
-is not transmitted to us or shared with third parties.
-</p>
+    <p>
+        Calculator does not require you to create an account or provide
+        personal information to use the application.
+    </p>
 
-<h2>Sound Effects and Settings</h2>
+    <p>
+        We do not intentionally collect personal information such as your
+        name, email address, phone number, contacts, precise location,
+        photographs, or other identifying information.
+    </p>
 
-<p>
-App preferences, such as sound effects and appearance settings, are used
-to provide the requested functionality. These settings remain on your device.
-</p>
+    <h2>Calculation History</h2>
 
-<h2>Third-Party Services</h2>
+    <p>
+        Calculator provides a calculation history feature. Your calculation
+        history is stored locally on your device so that you can view and
+        reuse previous calculations.
+    </p>
 
-<p>
-The App does not currently use third-party services that collect personal
-information from users.
-</p>
+    <div class="card">
+        <strong>Your calculation history stays on your device.</strong>
+        <p>
+            We do not receive or store your calculation history on our
+            servers.
+        </p>
+    </div>
 
-<h2>Children's Privacy</h2>
+    <h2>App Preferences</h2>
 
-<p>
-Calculator does not knowingly collect personal information from children.
-</p>
+    <p>
+        The application may save certain preferences locally on your device,
+        such as your selected appearance mode and sound-effect preference.
+        These settings are used only to provide the application's features.
+    </p>
 
-<h2>Data Security</h2>
+    <h2>Device Information</h2>
 
-<p>
-Because the App does not collect or transmit personal information, no
-personal information is stored on our servers.
-</p>
+    <p>
+        Calculator does not intentionally collect personal device
+        information or use your device information to identify you.
+    </p>
 
-<h2>Changes to This Privacy Policy</h2>
+    <h2>Internet Connection</h2>
 
-<p>
-We may update this Privacy Policy from time to time. Any changes will be
-posted on this page with an updated effective date.
-</p>
+    <p>
+        Calculator's core calculation features are designed to work without
+        requiring an internet connection. We do not transmit your
+        calculations or personal information to a remote server.
+    </p>
 
-<h2>Contact Us</h2>
+    <h2>Third-Party Services</h2>
 
-<p>
-If you have questions about this Privacy Policy, please contact us through
-the contact information provided on the application's Google Play Store
-listing.
-</p>
+    <p>
+        Calculator does not currently use third-party services that collect
+        personal information from users.
+    </p>
+
+    <h2>Advertising</h2>
+
+    <p>
+        Calculator does not currently display advertisements and does not
+        use advertising services to collect information about users.
+    </p>
+
+    <h2>Children's Privacy</h2>
+
+    <p>
+        Calculator does not knowingly collect personal information from
+        children or other users.
+    </p>
+
+    <h2>Data Security</h2>
+
+    <p>
+        Since Calculator does not collect or transmit personal information,
+        we do not maintain a server containing your personal information.
+        Information stored locally by the application remains on your device
+        and is subject to the security of your device.
+    </p>
+
+    <h2>Data Deletion</h2>
+
+    <p>
+        Because calculation history and preferences are stored locally,
+        you can remove this locally stored information by using the
+        application's available controls or by uninstalling the application
+        from your device.
+    </p>
+
+    <h2>Changes to This Privacy Policy</h2>
+
+    <p>
+        We may update this Privacy Policy from time to time to reflect
+        changes to the application or applicable requirements. When we make
+        changes, we will update the effective date shown at the top of this
+        page.
+    </p>
+
+    <h2>Contact Us</h2>
+
+    <p>
+        If you have questions or concerns about this Privacy Policy or
+        Calculator, you can contact us through the contact information
+        provided on the application's Google Play Store listing.
+    </p>
+
+    <h2>About Calculator</h2>
+
+    <p>
+        Calculator is designed to provide basic calculations, calculation
+        history, light and dark appearance modes, and optional sound
+        effects through a simple and user-friendly interface.
+    </p>
+
+</div>
+
+<footer>
+    © 2026 Calculator. All rights reserved.
+</footer>
 
 </body>
 </html>
+```
